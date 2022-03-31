@@ -6,7 +6,6 @@ const cors = require('cors');
 const session = require('express-session');
 const cookieParser = require('cookie-parser');
   app.use(express.json())
-  app.set('view engine', 'ejs')
   app.use(cookieParser());
   app.use(
     session({
