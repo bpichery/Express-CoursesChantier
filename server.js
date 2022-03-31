@@ -26,7 +26,7 @@ const cookieParser = require('cookie-parser');
   app.use(cors(corsOptions));
   
   const router = require('./routes/router.js');
-  app.use('/api/', router);
+  app.use('/', router);
 
 app.listen(port, function(){
     console.log(`Connected on port ${port}`);
